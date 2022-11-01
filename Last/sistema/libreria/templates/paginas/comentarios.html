@@ -1,0 +1,93 @@
+{%  extends "base.html" %}
+
+{% block titulo %} Review Center {% endblock %}
+
+{% block contenido %} 
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-2">
+      <h4 class="display-3 fw-light"><center>Review Center</center></h4>
+      <div class="mb-3">
+
+        <label for="" class="form-label">Username: </label>
+          
+        <input 
+        type= "text"
+        class="form-control" 
+        name="name" 
+        id="" 
+        aria-describedby="helpId" 
+        placeholder="Username">
+      </div>
+        
+        <label for="" class="form-label">ISBN: </label>
+          
+        <input 
+        type= "number"
+        class="form-control" 
+        name="name" 
+        id="" 
+        aria-describedby="helpId" 
+        placeholder="International Standard Book Number">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Comment:</label>
+          
+        <input 
+        type= "text"
+        class="form-control" 
+        name="name" 
+        id="" 
+        aria-describedby="helpId" 
+        placeholder="Write your comment here">
+      </div>
+
+      <form class="rating">
+        <center>
+        <label>
+          <input type="radio" name="stars" value="1" />
+          <span class="icon">★</span>
+          <br>
+        </label>
+       
+        <label>
+          <input type="radio" name="stars" value="2" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        
+        <label>
+          <input type="radio" name="stars" value="3" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>   
+        </label>
+        
+        <label>
+          <input type="radio" name="stars" value="4" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        
+        <label>
+          <input type="radio" name="stars" value="5" />
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+          <span class="icon">★</span>
+        </label>
+        </center>
+      </form>
+      
+    </div>
+  </div>
+  <div>
+    <input name="" id="" class="btn btn-success" type="submit" value="Submit Review" style="display:block; margin : 0 auto;">
+  </div>
+
+
+{% endblock %}

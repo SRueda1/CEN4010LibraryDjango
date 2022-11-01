@@ -1,0 +1,53 @@
+{%  extends "base.html" %}
+
+{% block titulo %} Edit a Book {% endblock %}
+
+{% block contenido %} 
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-2">
+      <h6 class="display-3 fw-light"><center>Edit a Book</center></h6>
+      <div class="mb-3">
+
+        <label for="" class="form-label">Username: </label>
+          
+        <input 
+        type= "text"
+        class="form-control" 
+        name="name" 
+        id="" 
+        aria-describedby="helpId" 
+        placeholder="Username">
+      </div>
+        
+        <label for="" class="form-label">ISBN: </label>
+          
+        <input 
+        type= "number"
+        class="form-control" 
+        name="name" 
+        id="" 
+        aria-describedby="helpId" 
+        placeholder="International Standard Book Number">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Reason to Edit:</label>
+          
+        <input 
+        type= "text"
+        class="form-control" 
+        name="name" 
+        id="" 
+        aria-describedby="helpId" 
+        placeholder="Write your reason to remove book here">
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <input name="" id="" class="btn btn-warning" type="submit" value="Upload Request to Edit" style="display:block; margin : 0 auto;">
+  </div>
+
+{% endblock %}
+

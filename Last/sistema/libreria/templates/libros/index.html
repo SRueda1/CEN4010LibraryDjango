@@ -1,0 +1,130 @@
+{%  extends "base.html" %}
+
+{% block titulo %} Book List {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Add a new book</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Books</h4>
+        <table class="table">
+ 
+            <thead>
+     
+                <tr>
+     
+                    <th>ISBN</th>
+     
+                    <th>Title</th>
+     
+                    <th>Images     </th>
+     
+                    <th>Description</th>
+
+                    <th>Actions</th>
+     
+                </tr>
+     
+            </thead>
+                <tbody>
+    
+                <tr>
+     
+                    <td>978-0137043293</td>
+     
+                    <td>Essential Scrum: A Practical Guide to the Most Popular Agile Process</td>
+     
+                    <td><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51p8eozb0gL._SX495_BO1,204,203,200_.jpg" 
+                        width="100" 
+                        height="150" />               </td>
+     
+                    <td>Essential Scrum will provide every team member, manager, and executive with a common understanding of Scrum.</td>
+     
+                    <td>
+                        <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Edit</a> |
+                        <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' %}" role="#">Delete</a>  |
+                        <a name="" id="" class="btn btn-success" href="{% url 'comentarios' %}" role="#">Create a Review</a> 
+                     </td>
+
+                </tr> 
+            </tbody>
+                <tbody>
+     
+                    <tr>
+         
+                        <td>978-0136061250</td>
+         
+                        <td>Object-Oriented Software Engineering using UML, patterns and Java</td>
+         
+                        <td><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51jNe4y1+-L._SY344_BO1,204,203,200_.jpg" 
+                            width="100" 
+                            height="150" />               </td>
+         
+                        <td>Object-Oriented programming is a computer programming model that organizes software design around data.</td>
+         
+                        <td>
+                            <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Edit</a> |
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' %}" role="button">Delete</a>  |
+                            <a name="" id="" class="btn btn-success" href="{% url 'comentarios' %}" role="button">Create a Review</a>
+                        </td>
+    
+                    </tr>  
+                </tbody>
+                <tbody>
+     
+                    <tr>
+         
+                        <td>978-1430219361</td>
+         
+                        <td>The Definitive Guide to Django: Web Development Done Right</td>
+         
+                        <td><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/519m7rt6bcL._SX376_BO1,204,203,200_.jpg" 
+                            width="100" 
+                            height="150" />               </td>
+         
+                        <td>Django, the Python–based equivalent to Ruby's Rails web development framework, is one of the topics in web development today.</td>
+         
+                        <td>
+                            <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Edit</a> |
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' %}" role="button">Delete</a>  |
+                            <a name="" id="" class="btn btn-success" href="{% url 'comentarios' %}" role="button">Create a Review</a> 
+                         </td>
+    
+                    </tr>  
+                </tbody>   
+                <tbody>
+     
+                    <tr>
+         
+                        <td>978-1839218859</td>
+         
+                        <td>The Python Workshop: Learn to code in Python and kickstart your career in software.</td>
+         
+                        <td><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41L8OZDhTML._SX404_BO1,204,203,200_.jpg" 
+                            width="100" 
+                            height="150" />               </td>
+         
+                        <td>Build key Python skills with engaging development tasks and challenging activities.</td>
+         
+                        <td>
+                            <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Edit</a> |
+                            <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' %}" role="button">Delete</a>  |
+                            <a name="" id="" class="btn btn-success" href="{% url 'comentarios' %}" role="#">Create a Review</a> 
+                         </td>
+    
+                    </tr>  
+                </tbody>         
+    
+        </table>
+        </div>
+        
+
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+{% endblock %}

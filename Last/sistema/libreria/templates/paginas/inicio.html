@@ -1,0 +1,23 @@
+{%  extends "base.html" %}
+
+{% block titulo %} Index {% endblock %}
+
+{% block contenido %} 
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Welcome to our Online Library</h1>
+      <img src="https://live-production.wcms.abc-cdn.net.au/4a403fde74a5814d4445c9b0e5daf038?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=244&width=862&height=485"     
+      width="1150" 
+      height="500" />
+      <p class="col-md-8 fs-4">Start adding books</p>
+      <a name="" id="" class="btn btn-success" href="{% url 'libros' %}" role="#">Search our catalog</a>
+      <p class="col-md-8 fs-4">Make a Review.</p>
+      <a name="" id="" class="btn btn-primary" href="{% url 'comentarios' %}" role="#">Leave a comment</a>
+      
+
+    </div>
+  </div>
+
+{% endblock %}
+
